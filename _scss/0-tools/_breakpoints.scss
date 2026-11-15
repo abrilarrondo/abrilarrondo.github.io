@@ -1,0 +1,28 @@
+$sm-width: '775px';
+$md-width: '960px';
+$lg-width: '1280px';
+$xl-width: '1920px';
+
+@mixin gt-xs() {
+  @media screen and (min-width: $sm-width) {
+    @content;
+  }
+}
+
+@mixin gt-sm() {
+  @media screen and (min-width: $md-width) {
+    @content;
+  }
+}
+
+@mixin gt-md() {
+  @media screen and (min-width: $lg-width) {
+    @content;
+  }
+}
+
+@mixin gt-lg() {
+  @media screen and (min-width: $xl-width) {
+    @content;
+  }
+}
