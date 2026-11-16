@@ -29,9 +29,10 @@ github_username: abrilarrondo
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 #  - jekyll-sass-converter
 sass:
-  sass_dir: _scss
+  sass_dir: _sass
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -41,6 +42,11 @@ sass:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+relative_permalinks: false
+collections:
+  pages:
+    output: true
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -52,4 +58,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - tasks.txt
+  - _dev_stuff/

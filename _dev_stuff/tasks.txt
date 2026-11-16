@@ -1,0 +1,2 @@
+[ ]: Fix breakpoints, look and size for mobile
+[ ]: Two css files in "assets" -- difference?
